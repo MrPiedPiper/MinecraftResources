@@ -1,0 +1,38 @@
+MrPiedPiper Recursion V2
+Now allows multiple test conditions
+
+Setup
+/scoreboard objectives add PiperRecursion dummy PiperRecursion
+
+Repeat
+(Starts up the chain by giving a tag to a player that hasn't been tested yet)
+	/tag @p[tag=!alreadyChecked] add currChecking
+ 
+Chain
+(This tests the player for conditions)
+(Test command. Make note of how many test commands you have, because you need the total for this to work.)
+	/execute @p[tag=currChecking] ~ ~ ~ <Whatever you want to check for. e.g. testforblocks, clear, ect.>
+	<Conditional> /scoreboard players add conditionCheck PiperRecursion 1
+(Another test command for a good example)
+	/execute @p[tag=currChecking] ~ ~ ~ <Whatever you want to check for. e.g. testforblocks, clear, ect.>
+	<Conditional> /scoreboard players add conditionCheck PiperRecursion 1
+
+(This marks the players that passed)
+(This tests for if all the tests succeeded. If so, that player gets marked as a successful check. This is where you put the total amount of tests you ran)
+	/scoreboard players test conditionCheck PiperRecursion 2 2
+	<Conditional> /tag @a[tag=currChecking] add checkMatched
+(Reset the scoreboard for the next player's check)
+	/scoreboard players set conditionCheck PiperRecursion 0
+
+(This will check if all the players online have been checked)
+(Mark the player as checked, and get rid of their active "currChecking" tag)
+	/tag @a[tag=currChecking] add alreadyChecked
+	/tag @a remove currChecking
+(Have any player that is not checked yet marked set the scoreboard to show this)
+	/execute @a[tag=!alreadyChecked] ~ ~ ~ /scoreboard players set finishLoopCheck PiperRecursion 1
+(If the scoreboard remains unchanged, restart the loop and run any commands you like on the matched players)
+	/scoreboard players test finishLoopCheck PiperRecursion 0 0
+	<Conditional> /tag @a remove alreadyChecked
+	<Conditional> <Command you want using @a[tag=checkMatched]>
+	<Conditional> /tag @a remove checkMatched
+	/scoreboard players set finishLoopCheck PiperRecursion 0

@@ -1,0 +1,48 @@
+MrPiedPiper Recursion V2.1
+1.0 -Initial release
+2.0 -Now allows multiple test conditions
+2.1 -Replaces tags with scoreboards to not clutter the `/tag <selector> list` command
+
+
+Setup
+/scoreboard objectives add PiperRecursion dummy PiperRecursion
+(Check help: 
+	0: Not checked
+	1: Checking
+	2: Checked
+	3: Matched)
+
+Repeat
+(Starts up the chain by making sure that all players are on the scoreboard)
+	/scoreboard players add @a PiperRecursion 0
+ 
+Chain
+(Sets the score of all players that haven't been tested yet to 1 (checking))
+	/scoreboard players set @p[scores={PiperRecursion=0}] PiperRecursion 1
+(This tests the player for conditions)
+(Test command. Make note of how many test commands you have, because you need the total for this to work.)
+	/execute @p[scores={PiperRecursion=1}] ~ ~ ~ <Whatever you want to check for. e.g. testforblocks, clear, ect.>
+	<Conditional> /scoreboard players add conditionCheck PiperRecursion 1
+(Another test command for a good example)
+	/execute @p[scores={PiperRecursion=1}] ~ ~ ~ <Whatever you want to check for. e.g. testforblocks, clear, ect.>
+	<Conditional> /scoreboard players add conditionCheck PiperRecursion 1
+
+(This marks the players that passed)
+(This tests for if all the tests succeeded. If so, that player gets marked as a successful check. This is where you put the total amount of tests you ran)
+	/scoreboard players test conditionCheck PiperRecursion 2 2
+	<Conditional> /scoreboard players set @a[scores={PiperRecursion=1}] PiperRecursion 3
+(Reset the scoreboard for the next player's check)
+	/scoreboard players set conditionCheck PiperRecursion 0
+
+(This will check if all the players online have been checked)
+(If the player didn't match, mark the player as checked by setting their score to 2)
+	/scoreboard players set @a[scores={PiperRecursion=1}] PiperRecursion 2
+(Have any player that is not checked yet set the scoreboard to show this)
+	/execute @a[scores={PiperRecursion=0}] ~ ~ ~ /scoreboard players set finishLoopCheck PiperRecursion 1
+(If the scoreboard remains unchanged, restart the loop and run any commands you like on the matched players)
+	/scoreboard players test finishLoopCheck PiperRecursion 0 0
+	<Conditional> /scoreboard players set finishLoopCheck PiperRecursion 2
+	<Conditional> <Command(s) you want using @a[scores={PiperRecursion=3}]>
+	/scoreboard players test finishLoopCheck PiperRecursion 2 2
+	<Conditional> /scoreboard players set @a PiperRecursion 0
+	/scoreboard players set finishLoopCheck PiperRecursion 0

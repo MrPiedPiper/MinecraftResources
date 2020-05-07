@@ -1,0 +1,19 @@
+Player login detector
+By MrPiedPiper with help from Sprunkles 📴 (Sprinkles#2335)
+
+Setup:
+/scoreboard objectives add join dummy join
+/scoreboard objectives add join2 dummy join2
+
+Repeat
+/scoreboard players add time join 1
+
+Chain
+/scoreboard players add @a join 1
+/execute @a ~ ~ ~ /scoreboard players operation @s join2 = @s join
+/scoreboard players operation @a join2 -= time join
+execute @a[scores={join2=..-1}] ~ ~ ~ say me
+/scoreboard players operation @a[scores={join2=..-1}] join = time join
+/execute @a[scores={join=999999..}] ~ ~ ~ scoreboard players reset @s join
+/scoreboard players test time join 999999 *
+<Conditional> /scoreboard players reset time join

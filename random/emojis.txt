@@ -1,0 +1,362 @@
+Minecraft 1.12 built-in emojis 
+MrPiedPiper
+
+name: xbox_face_button_down (a)
+code: 0xE000
+emoji:
+
+name: xbox_face_button_right (b)
+code: 0xE001
+emoji:
+
+name: xbox_face_button_left (x)
+code: 0xE002
+emoji:
+
+name: xbox_face_button_up (y)
+code: 0xE003
+emoji:
+
+name: xbox_bumper_left
+code: 0xE004
+emoji:
+
+name: xbox_bumper_right
+code: 0xE005
+emoji:
+
+name: xbox_trigger_left
+code: 0xE006
+emoji:
+
+name: xbox_trigger_right
+code: 0xE007
+emoji:
+
+name: xbox_select
+code: 0xE008
+emoji:
+
+name: xbox_start
+code: 0xE009
+emoji:
+
+name: xbox_stick_left
+code: 0xE00A
+emoji:
+
+name: xbox_stick_right
+code: 0xE00B
+emoji:
+
+name: xbox_dpad_up
+code: 0xE00C
+emoji:
+
+name: xbox_dpad_left
+code: 0xE00D
+emoji:
+
+name: xbox_dpad_down
+code: 0xE00E
+emoji:
+
+name: xbox_dpad_right
+code: 0xE00F
+emoji:
+
+name: ps4_face_button_down
+code: 0xE020
+emoji:
+
+name: ps4_face_button_right
+code: 0xE021
+emoji:
+
+name: ps4_face_button_left
+code: 0xE022
+emoji:
+
+name: ps4_face_button_up
+code: 0xE023
+emoji:
+
+name: ps4_bumper_left
+code: 0xE024
+emoji:
+
+name: ps4_bumper_right
+code: 0xE025
+emoji:
+
+name: ps4_trigger_left
+code: 0xE026
+emoji:
+
+name: ps4_trigger_right
+code: 0xE027
+emoji:
+
+name: ps4_select
+code: 0xE028
+emoji:
+
+name: ps4_start
+code: 0xE029
+emoji:
+
+name: ps4_stick_left
+code: 0xE02A
+emoji:
+
+name: ps4_stick_right
+code: 0xE02B
+emoji:
+
+name: ps4_dpad_up
+code: 0xE02C
+emoji:
+
+name: ps4_dpad_left
+code: 0xE02D
+emoji:
+
+name: ps4_dpad_down
+code: 0xE02E
+emoji:
+
+name: ps4_dpad_right
+code: 0xE02F
+emoji:
+
+name: switch_face_button_down
+code: 0xE040
+emoji:
+
+name: switch_face_button_right
+code: 0xE041
+emoji:
+
+name: switch_face_button_left
+code: 0xE042
+emoji:
+
+name: switch_face_button_up
+code: 0xE043
+emoji:
+
+name: switch_bumper_left
+code: 0xE044
+emoji:
+
+name: switch_bumper_right
+code: 0xE045
+emoji:
+
+name: switch_trigger_left
+code: 0xE046
+emoji:
+
+name: switch_trigger_right
+code: 0xE047
+emoji:
+
+name: switch_select
+code: 0xE048
+emoji:
+
+name: switch_start
+code: 0xE049
+emoji:
+
+name: switch_stick_left
+code: 0xE04A
+emoji:
+
+name: switch_stick_right
+code: 0xE04B
+emoji:
+
+name: switch_dpad_up
+code: 0xE04C
+emoji:
+
+name: switch_dpad_left
+code: 0xE04D
+emoji:
+
+name: switch_dpad_down
+code: 0xE04E
+emoji:
+
+name: switch_dpad_right
+code: 0xE04F
+emoji:
+
+name: mouse_left_button
+code: 0xE060
+emoji:
+
+name: mouse_right_button
+code: 0xE061
+emoji:
+
+name: mouse_middle_button
+code: 0xE062
+emoji:
+
+name: touch_forward
+code: 0xE080
+emoji:
+
+name: touch_left
+code: 0xE081
+emoji:
+
+name: touch_back
+code: 0xE082
+emoji:
+
+name: touch_right
+code: 0xE083
+emoji:
+
+name: touch_jump
+code: 0xE084
+emoji:
+
+name: touch_sneak
+code: 0xE085
+emoji:
+
+name: touch_fly_up
+code: 0xE086
+emoji:
+
+name: touch_fly_down
+code: 0xE087
+emoji:
+
+name: craftable_toggle_on
+code: 0xE0A0
+emoji:
+
+name: craftable_toggle_off
+code: 0xE0A1
+emoji:
+
+name: shank
+code: 0xE100
+emoji:
+
+name: armor
+code: 0xE101
+emoji:
+
+name: minecoin
+code: 0xE102
+emoji:
+
+name: code_builder_button
+code: 0xE103
+emoji:
+
+name: windowsmr_left_grab
+code: 0xE0C0
+emoji:
+
+name: windowsmr_right_grab
+code: 0xE0C1
+emoji:
+
+name: windowsmr_menu
+code: 0xE0C2
+emoji:
+
+name: windowsmr_left_stick
+code: 0xE0C3
+emoji:
+
+name: windowsmr_right_stick
+code: 0xE0C4
+emoji:
+
+name: windowsmr_left_touchpad
+code: 0xE0C5
+emoji:
+
+name: windowsmr_left_touchpad_horizontal
+code: 0xE0C6
+emoji:
+
+name: windowsmr_left_touchpad_vertical
+code: 0xE0C7
+emoji:
+
+name: windowsmr_right_touchpad
+code: 0xE0C8
+emoji:
+
+name: windowsmr_right_touchpad_horizontal
+code: 0xE0C9
+emoji:
+
+name: windowsmr_right_touchpad_vertical
+code: 0xE0CA
+emoji:
+
+name: windowsmr_left_trigger
+code: 0xE0CB
+emoji:
+
+name: windowsmr_right_trigger
+code: 0xE0CC
+emoji:
+
+name: windowsmr_windows
+code: 0xE0CD
+emoji:
+
+name: rift_0
+code: 0xE0E0
+emoji:
+
+name: rift_A
+code: 0xE0E1
+emoji:
+
+name: rift_B
+code: 0xE0E2
+emoji:
+
+name: rift_left_grab
+code: 0xE0E3
+emoji:
+
+name: rift_right_grab
+code: 0xE0E4
+emoji:
+
+name: rift_left_stick
+code: 0xE0E5
+emoji:
+
+name: rift_right_stick
+code: 0xE0E6
+emoji:
+
+name: rift_left_trigger
+code: 0xE0E7
+emoji:
+
+name: rift_right_trigger
+code: 0xE0E8
+emoji:
+
+name: rift_X
+code: 0xE0E9
+emoji:
+
+name: rift_Y
+code: 0xE0EA
+emoji:
